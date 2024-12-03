@@ -2824,3 +2824,33 @@ Extracts the regression coefficients using the broom::tidy() function.
 Joins the coefficients from both models into a single table.
 Displays the table with neat column labels using knitr::kable().
 Let me know if you encounter issues or want enhancements!
+
+I want to generate a simple   table that outlines all the 46 companies used in my analysis. No column or row titles, just company tickerr names. This info is contained in a csssv file.
+ChatGPT said:
+ChatGPT
+Here’s how you can create a simple table in R to display the 46 company ticker names without column or row titles:
+
+r
+Copy code
+#| label: company-ticker-table
+#| tbl-cap: Companies Used in the Analysis
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(knitr)
+
+# Read the CSV file containing the list of 46 companies
+company_data <- read_csv(here::here("data/01-company_basket/company_basket.csv"))
+
+# Extract only the ticker names (assuming the column is named 'Ticker')
+ticker_names <- company_data$Ticker
+
+# Create a simple table with ticker names
+kable(
+  matrix(ticker_names, ncol = 5, byrow = TRUE),
+  format = "markdown",  # Adjust format for your output type (e.g., "html" for Quarto)
+  col.names = NULL,
+  row.names = NULL
+)
