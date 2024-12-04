@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains an analysis of the relationship between portfolio diversification, market volatility, and portfolio performance. Using simulated portfolio data derived from S&P 500 companies, this study evaluates the dynamics between market volatilit, portfolio diversification, and portfolio performance. Linear regression models are employed to assess these effects alongside an exploration of heterogeneous effects of different portfolio returns. 
+This repository contains an analysis of the relationship between portfolio diversification, market volatility, and portfolio performance. Using simulated portfolio data derived from S&P 500 companies, this study evaluates the dynamics between market volatility, portfolio diversification, and portfolio performance. Linear regression models are employed to assess these effects alongside an exploration of heterogeneous effects of different portfolio returns. 
 
 
 ## File Structure
