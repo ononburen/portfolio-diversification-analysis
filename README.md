@@ -9,7 +9,7 @@ This repository contains an analysis of the relationship between portfolio diver
 
 The repo is structured as:
 
--   `data/01-company_basket` contains the basket of 50 companies scraped from Wikipedia.
+-   `data/01-company_basket` contains the basket of 50 companies generated from the data scraped from Wikipedia.
 -   `data/02-raw_data` contains the raw daily price data as obtained from Yahoo Finance using the `quantmod` package.
 -   `data/03-constructed_portfolios` contains 1,000 simulated portfolios consisting of the company tickers acquired from 01-company_basket. 
 -   `data/04-analysis_data` contains cleaned annual returns data for individual stocks and aggregated portfolios for two years, resulting in four files.
